@@ -1,22 +1,72 @@
-# ⚡ Cyberpunk AI & Web3 Portfolio
+# Jiayuan Portfolio
 
-一个融合了赛博朋克（Cyberpunk）霓虹美学与硬核科技风的单页个人作品集网站。专为展示 AI Agent 自动化工作流、AI 科技漫剧内容创作、Web3/ZK 零知识证明研究以及测试工程实践而设计。
+> Software Testing · Machine Vision · Image Quality · ISP
 
-项目采用 **Vibe Coding** 理念构建 —— 拒绝臃肿的传统工程化配置，采用单文件纯 HTML5 驱动，通过现代化的 Tailwind CSS CDN 引擎注入视觉灵魂。
+个人技术作品集，用于记录我的职业经历、测试实践以及图像与机器视觉方向的学习项目。
 
----
+## About Me
 
-## 🚀 核心亮点 (Features)
+我是一名测试工程师，具备嵌入式软件测试、图像质量测试以及 ISP 调试经验。
 
-- **霓虹暗黑美学 (Cyberpunk Aesthetics)**：采用 `#000000` 纯黑作为信任基石，辅以 `cyan-300`（赛博青）与 `pink-400`（极光粉）双色霓虹视觉，营造极客氛围。
-- **自适应视频宇宙 (Adaptive Media Decryption)**：内置原生 JavaScript 控制的流线型浮窗（Modal），无缝嵌入 B 站高清视频（支持动态清除内存，彻底杜绝后台“幽灵声音”）。
-- **零构建心智负担 (Zero Build Cost)**：纯 HTML + 纯原生 JS + Tailwind CDN。免去 `npm install` 与打包编译等待，对 Vercel / GitHub Pages 托管极度友好，上线即巅峰。
-- **完美适配移动端 (Fully Responsive)**：从大屏显示器到移动端设备，布局与光晕渐变完全自动缩放。
+目前主要关注：
 
----
+- 软件测试
+- 机器视觉
+- 图像质量
+- Camera ISP
+- 3D Point Cloud
+- 自动化测试
 
-## 🛠️ 项目结构 (Repository Structure)
+## Projects
+
+### ISP Learning Lab
+
+Camera ISP 学习与实验项目。
+
+GitHub:
+
+https://github.com/sherryxie995/isp-learning-lab
+
+学习内容包括：
+
+- Bayer
+- Demosaic
+- White Balance
+- Gamma
+- Noise Reduction
+- Sharpening
+- HDR
+- Color Space
+
+### Image Quality Testing
+
+总结实际 ISP 调试中的图像质量评价方法。
+
+### 3D Point Cloud Testing
+
+学习 3D 点云、机器视觉软件测试以及相关质量评价方法。
+
+### Embedded Software Testing
+
+记录 NVR / IPC / Embedded Software Testing 实践。
+
+## Tech Stack
+
+- HTML5
+- CSS
+- JavaScript
+- Tailwind CSS
+- Python
+- Git
+- Linux
+
+## Website
+
+[Live Demo](你的 Vercel 地址)
+
+## Repository Structure
 
 ```text
-├── index.html        # 核心单文件（包含网页结构、Tailwind 样式与交互 JS）
-└── README.md         # 本说明文档
+my-portfolio/
+├── index.html
+└── README.md
