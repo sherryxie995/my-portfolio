@@ -28,6 +28,14 @@
     }
   </style>
   </head>
+  <button
+  id="backToTop"
+  class="fixed bottom-6 right-6 hidden rounded-full border border-cyan-400
+         bg-black/80 px-4 py-3 text-cyan-400
+         hover:bg-cyan-400 hover:text-black transition z-40"
+>
+  ↑
+</button>
   <body
     class="bg-black text-cyan-300 antialiased selection:bg-pink-500 selection:text-black"
   >
@@ -37,7 +45,31 @@
         class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,#00ffff,transparent_70%)] pointer-events-none"
       ></div>
 
-      <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <nav class="flex justify-between items-center py-6">
+
+  <div class="font-mono text-cyan-400 font-bold">
+    JIAYUAN.exe
+  </div>
+
+  <div class="hidden md:flex gap-6 text-sm font-mono">
+    <a href="#" class="hover:text-pink-400 transition">
+      HOME
+    </a>
+
+    <a href="#experience-section" class="hover:text-pink-400 transition">
+      EXPERIENCE
+    </a>
+
+    <a href="#projects-section" class="hover:text-pink-400 transition">
+      PROJECTS
+    </a>
+
+    <a href="#blog-section" class="hover:text-pink-400 transition">
+      BLOG
+    </a>
+  </div>
+
+</nav>
         <!-- 英雄首屏 -->
         <section class="min-h-screen flex flex-col justify-center">
           <div class="mb-6 text-pink-400 tracking-[8px] text-sm font-mono">
@@ -323,6 +355,28 @@
 
     <!-- 原生 JavaScript 交互控制 -->
     <script>
+      const backToTop = document.getElementById("backToTop");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 500) {
+          backToTop.classList.remove("hidden");
+        } else {
+          backToTop.classList.add("hidden");
+        }
+      });
+
+      backToTop.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+
+      document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeVideoModal();
+      }
+      });
+
       const filterButtons = document.querySelectorAll(".filter-btn");
       const projectCards = document.querySelectorAll(".project-card");
 
