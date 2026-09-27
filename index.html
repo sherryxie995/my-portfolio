@@ -30,12 +30,13 @@
           </h1>
 
           <div class="text-2xl text-cyan-100 mb-8 font-semibold">
-            测试工程师 / AI创作者 / 科技博主 / Web3探索者
+              测试工程师 / 图像质量 / 机器视觉
           </div>
 
           <p class="max-w-2xl text-zinc-400 leading-8 text-lg">
-            我正在构建未来：AI Agent、AI安防、Vibe Coding、Web3与科技内容创作。
-            用技术、叙事和想象力，把未来提前带到今天。
+              专注于软件测试、机器视觉与图像质量验证。
+              具备 ISP 调试、图像质量测试、嵌入式系统测试经验，
+              正持续探索 Camera ISP、3D 视觉与智能视觉测试。
           </p>
 
           <div class="flex gap-4 mt-10 flex-wrap font-bold text-sm">
@@ -95,35 +96,142 @@
           </div>
         </section>
 
-        <!-- 博客板块 -->
-        <section id="blog-section" class="py-20">
-          <h2
-            class="text-4xl font-bold mb-10 text-cyan-300 font-mono tracking-wide"
-          >
-            BLOG_FEED
-          </h2>
-          <div class="space-y-5 font-medium">
-            <div
-              class="border-l-4 border-pink-500 pl-5 py-4 bg-white/5 rounded-r-2xl hover:translate-x-2 transition text-zinc-200"
-            >
-              AI Agent 是什么
-            </div>
-            <div
-              class="border-l-4 border-pink-500 pl-5 py-4 bg-white/5 rounded-r-2xl hover:translate-x-2 transition text-zinc-200"
-            >
-              Vibe Coding 工作流
-            </div>
-            <div
-              class="border-l-4 border-pink-500 pl-5 py-4 bg-white/5 rounded-r-2xl hover:translate-x-2 transition text-zinc-200"
-            >
-              零知识证明入门
-            </div>
-            <div
-              class="border-l-4 border-pink-500 pl-5 py-4 bg-white/5 rounded-r-2xl hover:translate-x-2 transition text-zinc-200"
-            >
-              AI安防未来趋势
-            </div>
+              <!-- 项目板块 -->
+      <section id="projects-section" class="py-20">
+
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-10 gap-4">
+          <div>
+            <h2 class="text-4xl font-bold text-pink-400 font-mono tracking-wide">
+              PROJECTS.exe
+            </h2>
+
+            <p class="text-zinc-500 mt-3">
+              Engineering projects & learning experiments
+            </p>
           </div>
+        </div>
+
+        <div id="projectGrid" class="grid md:grid-cols-2 gap-6">
+
+          <!-- ISP -->
+          <article
+            class="project-card group rounded-[30px] p-6 backdrop-blur bg-white/5 border border-cyan-900/50 hover:border-cyan-400/70 hover:-translate-y-2 transition shadow-2xl"
+            data-category="image"
+          >
+
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-sm text-cyan-400 font-mono">
+                IMAGE / ISP
+              </span>
+
+              <span class="text-xs text-zinc-500">
+                2026
+              </span>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4 text-white">
+              ISP Learning Lab
+            </h3>
+
+            <p class="text-zinc-400 leading-7 mb-6">
+              面向 Camera ISP 的系统学习与实验项目，
+              包含 Bayer、Demosaic、Gamma、Noise Reduction、
+              Sharpening、HDR 等图像处理实验。
+            </p>
+
+            <a
+              href="https://github.com/sherryxie995/isp-learning-lab"
+              target="_blank"
+              class="text-cyan-400 hover:text-pink-400 font-mono text-sm"
+            >
+              VIEW ON GITHUB →
+            </a>
+
+          </article>
+
+          <!-- Image Quality -->
+          <article
+            class="project-card group rounded-[30px] p-6 backdrop-blur bg-white/5 border border-cyan-900/50 hover:border-pink-400/70 hover:-translate-y-2 transition shadow-2xl"
+            data-category="image"
+          >
+
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-sm text-pink-400 font-mono">
+                IMAGE QUALITY
+              </span>
+
+              <span class="text-xs text-zinc-500">
+                EXPERIENCE
+              </span>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4 text-white">
+              Image Quality Testing
+            </h3>
+
+            <p class="text-zinc-400 leading-7">
+              基于实际 ISP 调试经验，
+              总结图像噪声、色偏、细节损失、Gamma、
+              滤波及主观/客观画质评价方法。
+            </p>
+
+          </article>
+
+          <!-- 3D -->
+          <article
+            class="project-card group rounded-[30px] p-6 backdrop-blur bg-white/5 border border-cyan-900/50 hover:border-cyan-400/70 hover:-translate-y-2 transition shadow-2xl"
+            data-category="vision"
+          >
+
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-sm text-cyan-400 font-mono">
+                3D VISION
+              </span>
+
+              <span class="text-xs text-zinc-500">
+                LEARNING
+              </span>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4 text-white">
+              3D Point Cloud Testing
+            </h3>
+
+            <p class="text-zinc-400 leading-7">
+              学习 3D 点云数据结构、坐标系、
+              点云质量评价及机器视觉软件测试方法。
+            </p>
+
+          </article>
+
+          <!-- Embedded -->
+          <article
+            class="project-card group rounded-[30px] p-6 backdrop-blur bg-white/5 border border-cyan-900/50 hover:border-pink-400/70 hover:-translate-y-2 transition shadow-2xl"
+            data-category="testing"
+          >
+
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-sm text-pink-400 font-mono">
+                SOFTWARE TESTING
+              </span>
+
+              <span class="text-xs text-zinc-500">
+                EXPERIENCE
+              </span>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4 text-white">
+              Embedded Software Testing
+            </h3>
+
+            <p class="text-zinc-400 leading-7">
+              覆盖 NVR、IPC、协议、回归测试、
+              稳定性测试及问题定位的嵌入式软件测试实践。
+            </p>
+
+          </article>
+
+        </div>
         </section>
       </div>
     </div>
